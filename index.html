@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>PRAYER TIMES CALENDAR</title>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="header">
+            <h1>Prayer Times</h1>
+        </div>
+        
+        <div class="filter">
+
+            <div class="row">
+
+                <h2>Filter</h2>
+
+                <div class="col-md-3">
+                    <p><b>Select Date :</b></p>
+                    <div class="input-group date" data-provide="datepicker">
+                        <input type="date" class="form-control" id="date">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                </div>               
+
+                <div class="col-md-3">
+                    <p><b>Select Country :</b></p>
+                    <select class="form-select" aria-label="Default select example" id="countries">
+                        <option selected>Select your Country</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <p><b>Select State :</b></p>
+                    <select class="form-select" aria-label="Default select example" id="states">
+                        <option selected>Select your State :</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <p><b>Actions :</b></p>
+                    <div class="actions">
+                        <button type="button" class="btn btn-outline-primary" id="submit">Apply</button>
+                        <button type="button" class="btn btn-outline-primary" id="reset">Reset</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+        <div class="ctn" id="ctn">            
+        </div>
+        
+
+        <div class="ctn" id="ctn2">
+            <h2 id="current-m">All Month</h2>
+            <table id="tab1">
+
+            </table>
+        </div>
+
+    </div>
+</body>
+
+<script src="node_modules/axios/dist/axios.min.js"></script>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,182 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url(src/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div#container {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#container .header {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(30, 62, 90);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+div#container h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/***** Filter *********/
+
+.filter, .ctn {
+    padding: 35px 20px;
+    background: #0a0a0a9e;
+    margin: 10px;
+    border-radius: 10px;
+}
+.filter .row{
+    align-items: flex-end;
+}
+
+
+.filter h2, div#ctn2 h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.filter p{
+    color: #fff;
+}
+
+
+/**** select style ****/
+
+
+
+
+
+/**** buttons ****/
+
+.actions {
+    display : flex ;
+    gap : 5px;
+}
+
+button.btn.btn-outline-primary {
+    width: 100%;
+    color: #fff;
+    border-color: #fb6a01;
+    transition : all 0.3s ease;
+}
+
+button.btn.btn-outline-primary:hover {
+    background-color: #fb6a01;
+}
+
+
+
+
+/****** one Day style ********/
+
+div.box {
+    background-size: cover;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #fb6a01;
+    border-radius: 34px;
+    width: 110px;
+    height: 110px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#fa {
+    background-image: url(src/images/fajr.png);
+}
+
+div#su {
+    background-image: url(src/images/sunrise.png);
+}
+
+div#dh {
+    background-image: url(src/images/dhohr.png);
+}
+
+div#as {
+    background-image: url(src/images/asr.png);
+}
+
+div#ma {
+    background-image: url(src/images/maghrib.png);
+}
+
+div#is {
+    background-image: url(src/images/isha.png);
+}
+
+
+
+.ctn .row {
+
+    color: #fff;
+    text-align: center;
+}
+
+/**** All month Table ****/
+
+table#tab1 {
+    width: 100%;
+}
+
+table#tab1 th, table#tab1 td {
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+th {
+    background: #fb6a01;
+}
+
+tr.current-day {
+    background: #092c3f;
+    color: #000 !important;
+    font-weight: 700;
+}
+
+
+div#ctn, div#ctn2 {
+    visibility: hidden;
+}
+
+tbody:nth-child(2n+1) {
+    background: #000000b3;
+}
+
+
+tbody:hover, tr.current-day:hover {
+    background: #000 !important;
+}
+
+
+
+
+@media screen and (max-width : 991px) {
+
+    table#tab1 th, table#tab1 td {
+        font-size: 12px !important;
+    }
+    
+}
