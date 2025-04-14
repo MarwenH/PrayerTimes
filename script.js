@@ -1,7 +1,3 @@
-
-
-
-
 window.addEventListener("load",()=>{
     document.getElementById("date").value = new Date().toJSON().slice(0, 10);
     getCountries()
@@ -61,7 +57,7 @@ function getPrayerTime(year,month,day,state,country)
 {
 
     return new Promise ((resolve,reject)=>{
-        axios.get('http://api.aladhan.com/v1/calendarByCity/'+year+'/'+month+'?city='+state+'&country='+country+'&method=16')
+        axios.get('https://api.aladhan.com/v1/calendarByCity/'+year+'/'+month+'?city='+state+'&country='+country+'&method=16')
 
         .then(function (response) {
 
@@ -140,7 +136,7 @@ function getAllMonthTable(year,month,day,state,country)
 {
 
 
-    axios.get('http://api.aladhan.com/v1/calendarByCity/'+year+'/'+month+'?city='+state+'&country='+country+'&method=16')
+    axios.get('https://api.aladhan.com/v1/calendarByCity/'+year+'/'+month+'?city='+state+'&country='+country+'&method=16')
     .then(function (response) {
     
     // handle success
