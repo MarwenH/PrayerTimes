@@ -103,27 +103,27 @@ div.box {
 }
 
 div#fa {
-    background-image: url(src/images/fajr.png);
+    background-image: url(./images/fajr.png);
 }
 
 div#su {
-    background-image: url(src/images/sunrise.png);
+    background-image: url(./images/sunrise.png);
 }
 
 div#dh {
-    background-image: url(src/images/dhohr.png);
+    background-image: url(./images/dhohr.png);
 }
 
 div#as {
-    background-image: url(src/images/asr.png);
+    background-image: url(./images/asr.png);
 }
 
 div#ma {
-    background-image: url(src/images/maghrib.png);
+    background-image: url(./images/maghrib.png);
 }
 
 div#is {
-    background-image: url(src/images/isha.png);
+    background-image: url(./images/isha.png);
 }
 
 
